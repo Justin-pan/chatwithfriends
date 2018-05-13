@@ -1,0 +1,17 @@
+.chatroom{
+  display: none;
+}
+div#messageform{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+div#discon{
+  padding-top:1.6em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  border: 1px solid black;
+
+  cursor: pointer;
+}

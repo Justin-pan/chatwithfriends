@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chat anonymous</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="userPrompt()">
+  <div class="menu">
+    <h1> Create a room, or join one if there are some listed below</h1>
+    <form action="javascript:void(0)" id="createRoom">
+      <input type="text" name="roomName" required autofocus placeholder="Room name"/><br>
+      <input type="password" name="password" placeholder="Room Password"/><br>
+      <input type="submit" value="Create Room"/>
+    </form>
+    <ul class="roomlist">
+    </ul>
+  </div>
+  <div class="chatroom">
+    <h3 class="roomname"></h3>
+    <div class="messages"></div>
+    <form action="javascript:void(0)" id="messageform">
+      <input type="text" id="message" name="message" required autofocus />
+      <input type="submit"
+       style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+       tabindex="-1" />
+      <span id='discon'>DISCONNECT</span>
+    </form>
+  </div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/socket.io.js"></script>
+<script src="js/script.js"></script>
+</html>
